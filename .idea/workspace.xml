@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="" />
+    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/pojos/Grades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/pojos/Marks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/pojos/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/dummy/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/dummy/DummyStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/dummy/TeacherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/david/learn/interfaces/TaxService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/david/learn/interfaces/TaxService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/david/learn/tax/MeanTaxFactorCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/david/learn/tax/MeanTaxFactorCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/interfaces/TaxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/interfaces/TaxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/tax/MeanTaxFactorCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/tax/MeanTaxFactorCalculator.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +32,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Q4Umx24YVv3OgERp6FuxBAn8fe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -49,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood">
     <configuration name="MeanTaxFactorCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
@@ -65,8 +90,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.davi.learn.testdoubles.dummy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.davi.learn.testdoubles.dummy" />
+      <option name="MAIN_CLASS_NAME" value="com.davi.learn.testdoubles.dummy.TeacherTest" />
+      <option name="METHOD_NAME" value="whenMarksAboveSeventyFivePercentReturnsVeryGood" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood" />
         <item itemvalue="JUnit.MeanTaxFactorCalculatorTest" />
       </list>
     </recent_temporary>
@@ -83,10 +125,30 @@
       <updated>1567029524638</updated>
       <workItem from="1567029528694" duration="17000" />
       <workItem from="1567088420144" duration="5122000" />
+      <workItem from="1567348279483" duration="1618000" />
+      <workItem from="1567375723077" duration="606000" />
+      <workItem from="1567464816737" duration="1021000" />
+      <workItem from="1567641547776" duration="58000" />
+      <workItem from="1567816430855" duration="48000" />
+      <workItem from="1568479090145" duration="670000" />
+      <workItem from="1568483266153" duration="3553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

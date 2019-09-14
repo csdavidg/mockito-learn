@@ -17,4 +17,8 @@ public class MeanTaxFactorCalculator {
         return (currentTaxFactor + anotherTaxFactor) / 2;
     }
 
+    public String moneyCode(){
+        return "COP";
+    }
+
 }
