@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/CreateStudentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/StudentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/stub/ConnetionTimedOutStudentDAOStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/stub/StudentServiceTest.java" afterDir="false" />
+    <list default="true" id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/spy/MethodInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/spy/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/spy/StudentServiceSpy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/spy/StudentServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/david/learn/interfaces/TaxService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/david/learn/pojos/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/david/learn/tax/MeanTaxFactorCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/davi/learn/MeanTaxFactorCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/stub/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/MeanTaxFactorCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/dummy/DummyStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/dummy/DummyStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/dummy/TeacherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/dummy/TeacherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/stub/ConnetionTimedOutStudentDAOStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/stub/ConnetionTimedOutStudentDAOStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/testdoubles/stub/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/stub/StudentServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,7 @@
   </component>
   <component name="ProjectId" id="1Q4Umx24YVv3OgERp6FuxBAn8fe" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -71,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentServiceTest.whenConnectionTimesOutThenTheStudentIsNotSaved">
+  <component name="RunManager" selected="JUnit.StudentServiceTest.enrollsStudents">
     <configuration name="MeanTaxFactorCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
@@ -83,6 +84,37 @@
       <option name="PACKAGE_NAME" value="com.davi.learn" />
       <option name="MAIN_CLASS_NAME" value="com.davi.learn.MeanTaxFactorCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.davi.learn.testdoubles.stub.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.davi.learn.testdoubles.stub" />
+      <option name="MAIN_CLASS_NAME" value="com.davi.learn.testdoubles.stub.StudentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.enrollsStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.testdoubles.spy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.testdoubles.spy" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.testdoubles.spy.StudentServiceTest" />
+      <option name="METHOD_NAME" value="enrollsStudents" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentServiceTest.enrollsStudents" />
+        <item itemvalue="JUnit.StudentServiceTest" />
         <item itemvalue="JUnit.StudentServiceTest.whenConnectionTimesOutThenTheStudentIsNotSaved" />
         <item itemvalue="JUnit.TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood" />
         <item itemvalue="JUnit.MeanTaxFactorCalculatorTest" />
