@@ -1,4 +1,4 @@
-package com.davi.learn.testdoubles.stub;
+package com.david.learn.testdoubles.stub;
 
 import com.david.learn.testdoubles.stub.StudentDAO;
 

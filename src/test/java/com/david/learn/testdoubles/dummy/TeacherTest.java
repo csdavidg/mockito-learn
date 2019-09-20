@@ -1,8 +1,7 @@
-package com.davi.learn.testdoubles.dummy;
+package com.david.learn.testdoubles.dummy;
 
 import com.david.learn.pojos.Grades;
 import com.david.learn.pojos.Marks;
-import com.david.learn.testdoubles.dummy.Teacher;
 import org.junit.Test;
 
 import java.math.BigDecimal;

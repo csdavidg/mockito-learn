@@ -1,4 +1,4 @@
-package com.davi.learn.testdoubles.dummy;
+package com.david.learn.testdoubles.dummy;
 
 import com.david.learn.pojos.Student;
 

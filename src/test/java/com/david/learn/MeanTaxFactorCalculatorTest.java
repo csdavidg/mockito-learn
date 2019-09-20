@@ -1,4 +1,4 @@
-package com.davi.learn;
+package com.david.learn;
 
 import com.david.learn.interfaces.TaxService;
 import com.david.learn.entities.Person;
