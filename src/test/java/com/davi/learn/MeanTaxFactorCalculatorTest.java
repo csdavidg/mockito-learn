@@ -1,7 +1,7 @@
 package com.davi.learn;
 
 import com.david.learn.interfaces.TaxService;
-import com.david.learn.pojos.Person;
+import com.david.learn.entities.Person;
 import com.david.learn.tax.MeanTaxFactorCalculator;
 import org.junit.Test;
 import org.junit.runner.RunWith;

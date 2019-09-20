@@ -1,7 +1,7 @@
 package com.david.learn.tax;
 
 import com.david.learn.interfaces.TaxService;
-import com.david.learn.pojos.Person;
+import com.david.learn.entities.Person;
 
 public class MeanTaxFactorCalculator {
 
