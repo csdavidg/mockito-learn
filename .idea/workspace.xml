@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/entities/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/repositories/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/services/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+    <list default="true" id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/JdbcSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/mock/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/mock/StudentServiceMockObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/fake/StudentDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/testdoubles/mock/StudentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/interfaces/TaxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/interfaces/TaxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/pojos/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/tax/MeanTaxFactorCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/tax/MeanTaxFactorCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/davi/learn/MeanTaxFactorCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/davi/learn/MeanTaxFactorCalculatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,30 +29,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="localdb: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="localdb: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ExternalProjectsData">
@@ -119,6 +87,7 @@
   </component>
   <component name="ProjectId" id="1Q4Umx24YVv3OgERp6FuxBAn8fe" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -130,7 +99,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../primerdemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MockitoEssentials/Chapter 1/3605OS_TestDoubles" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -141,6 +110,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.david.learn" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.david.learn.testdoubles.mock" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.david.learn.tax.pojos" />
@@ -159,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.mockito-learn [build]">
+  <component name="RunManager" selected="JUnit.StudentDaoTest.whenNewStudentThenCreatesStudent">
     <configuration name="mockito-learn [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,17 +151,50 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MeanTaxFactorCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDaoTest.whenNewStudentThenCreatesStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.davi.learn.*" />
+          <option name="PATTERN" value="com.david.learn.testdoubles.fake.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.davi.learn" />
-      <option name="MAIN_CLASS_NAME" value="com.davi.learn.MeanTaxFactorCalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.david.learn.testdoubles.fake" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.testdoubles.fake.StudentDaoTest" />
+      <option name="METHOD_NAME" value="whenNewStudentThenCreatesStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDaoTest.whenRowCountDoesNotMatchThenRollBackTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.testdoubles.fake.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.testdoubles.fake" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.testdoubles.fake.StudentDaoTest" />
+      <option name="METHOD_NAME" value="whenRowCountDoesNotMatchThenRollBackTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.enrollsStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.testdoubles.mock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.testdoubles.mock" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.testdoubles.mock.StudentServiceTest" />
+      <option name="METHOD_NAME" value="enrollsStudents" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,28 +215,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.davi.learn.testdoubles.dummy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.davi.learn.testdoubles.dummy" />
-      <option name="MAIN_CLASS_NAME" value="com.davi.learn.testdoubles.dummy.TeacherTest" />
-      <option name="METHOD_NAME" value="whenMarksAboveSeventyFivePercentReturnsVeryGood" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentDaoTest.whenNewStudentThenCreatesStudent" />
+        <item itemvalue="JUnit.StudentDaoTest.whenRowCountDoesNotMatchThenRollBackTransaction" />
+        <item itemvalue="JUnit.StudentServiceTest.enrollsStudents" />
         <item itemvalue="Gradle.mockito-learn [build]" />
         <item itemvalue="JUnit.StudentServiceTest.whenConnectionTimesOutThenTheStudentIsNotSaved" />
-        <item itemvalue="JUnit.TeacherTest.whenMarksAboveSeventyFivePercentReturnsVeryGood" />
-        <item itemvalue="JUnit.MeanTaxFactorCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +250,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="" />
+      <changelist id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="" />
       <created>1567029524638</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -279,6 +269,8 @@
       <workItem from="1568586857628" duration="2976000" />
       <workItem from="1568858203162" duration="68000" />
       <workItem from="1568936988881" duration="2002000" />
+      <workItem from="1570044941221" duration="6142000" />
+      <workItem from="1570131021597" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="Stub objects">
       <created>1568858226329</created>
@@ -309,5 +301,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Stub objects" />
     <option name="LAST_COMMIT_MESSAGE" value="Stub objects" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/StudentDaoImpl.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
