@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface StudentDao {
 
-    public void batchUpdate(List<Student> students);
+    void batchUpdate(List<Student> students);
+
 }

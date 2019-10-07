@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class JdbcSupport {
 
-    public int[] batchUpdate(String sql, List<Map<String, Object>> params) {
+    public int[] batchUpdate(String sql, List<Map<String, Object>> params){
         return null;
     }
 }
