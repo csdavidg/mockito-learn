@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/ErrorHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LDAPManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LDAPManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/mockito/stubbing/AjaxControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/DemoControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/LoginControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/annotations/AnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/annotations/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/DemoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/DemoControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +95,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -129,13 +118,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -166,7 +155,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage">
+  <component name="RunManager" selected="JUnit.DemoControllerTest.whenDoReturnFails">
+    <configuration name="DemoControllerTest.whenDoReturnFails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.voidmethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.voidmethods" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.voidmethods.DemoControllerTest" />
+      <option name="METHOD_NAME" value="whenDoReturnFails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoControllerTest.whenSpyingRealObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.voidmethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.voidmethods" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.voidmethods.DemoControllerTest" />
+      <option name="METHOD_NAME" value="whenSpyingRealObjects" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
@@ -214,44 +235,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OurMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.david.learn.poc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.poc" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.poc.OurMockTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OurMockTest.stubbing_exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.david.learn.poc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.poc" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.poc.OurMockTest" />
-      <option name="METHOD_NAME" value="stubbing_exception" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoControllerTest.whenDoReturnFails" />
+        <item itemvalue="JUnit.DemoControllerTest.whenSpyingRealObjects" />
         <item itemvalue="JUnit.DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage" />
         <item itemvalue="JUnit.DemoControllerTest.whenSubsystemThrowsExceptionThenRoutesToErrorPage" />
         <item itemvalue="JUnit.LoginControllerTest" />
-        <item itemvalue="JUnit.OurMockTest.stubbing_exception" />
-        <item itemvalue="JUnit.OurMockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +270,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="" />
+      <changelist id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="" />
       <created>1567029524638</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -307,6 +297,7 @@
       <workItem from="1570401509299" duration="2589000" />
       <workItem from="1570404678838" duration="3688000" />
       <workItem from="1570410975625" duration="4032000" />
+      <workItem from="1570565344131" duration="3923000" />
     </task>
     <task id="LOCAL-00001" summary="Stub objects">
       <created>1568858226329</created>
@@ -315,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568858226329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Void Methods">
+      <created>1570550196258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570550196258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +334,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Stub objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stub objects" />
+    <MESSAGE value="Void Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Void Methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
