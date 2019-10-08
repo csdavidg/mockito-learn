@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/AjaxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/CountryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/JsonDataWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/RequestBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/RetrieveCountryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/SortColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/mockito/stubbing/SortOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/poc/ExternalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/poc/OurMockito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/services/LocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/JdbcSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/testdoubles/fake/StudentDaoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/poc/OurMockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/poc/PocTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/services/PersonServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/stubbing/AjaxControllerTest.java" afterDir="false" />
+    <list default="true" id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/ErrorHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LDAPManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LDAPManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/mockito/stubbing/AjaxControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/DemoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/voidmethods/LoginControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/services/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/services/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +117,7 @@
   </component>
   <component name="ProjectId" id="1Q4Umx24YVv3OgERp6FuxBAn8fe" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +129,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/david/learn/voidmethods" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -144,16 +138,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.david.learn.voidmethods" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.david.learn" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\test\java\com\david\learn" />
-      <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\main\java\com\david\learn\mockito\stubbing" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.david.learn.tax.pojos" />
       <recent name="com.david.learn.tax.interfaces" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cristian.sanchez\IdeaProjects\mockito-learn\src\main\java\com\david\learn\voidmethods" />
+      <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\test\java\com\david\learn" />
+      <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\main\java\com\david\learn\mockito\stubbing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -168,7 +166,54 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OurMockTest.stubbing_exception">
+  <component name="RunManager" selected="JUnit.DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage">
+    <configuration name="DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.voidmethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.voidmethods" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.voidmethods.DemoControllerTest" />
+      <option name="METHOD_NAME" value="whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoControllerTest.whenSubsystemThrowsExceptionThenRoutesToErrorPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.voidmethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.voidmethods" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.voidmethods.DemoControllerTest" />
+      <option name="METHOD_NAME" value="whenSubsystemThrowsExceptionThenRoutesToErrorPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.voidmethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.voidmethods" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.voidmethods.LoginControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OurMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
@@ -180,38 +225,6 @@
       <option name="PACKAGE_NAME" value="com.david.learn.poc" />
       <option name="MAIN_CLASS_NAME" value="com.david.learn.poc.OurMockTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OurMockTest.stubbingErrorConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.david.learn.poc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.poc" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.poc.OurMockTest" />
-      <option name="METHOD_NAME" value="stubbingErrorConditions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OurMockTest.stubbingMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.david.learn.poc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.poc" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.poc.OurMockTest" />
-      <option name="METHOD_NAME" value="stubbingMethod" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,29 +245,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceTest.answerSuccessUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mockito-poc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.david.learn.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.services" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.services.PersonServiceTest" />
-      <option name="METHOD_NAME" value="answerSuccessUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoControllerTest.whenSubsystemThrowsAnyExceptionThenFindsErrorMessageAndRoutesToErrorPage" />
+        <item itemvalue="JUnit.DemoControllerTest.whenSubsystemThrowsExceptionThenRoutesToErrorPage" />
+        <item itemvalue="JUnit.LoginControllerTest" />
         <item itemvalue="JUnit.OurMockTest.stubbing_exception" />
         <item itemvalue="JUnit.OurMockTest" />
-        <item itemvalue="JUnit.OurMockTest.stubbingErrorConditions" />
-        <item itemvalue="JUnit.OurMockTest.stubbingMethod" />
-        <item itemvalue="JUnit.PersonServiceTest.answerSuccessUpdate" />
       </list>
     </recent_temporary>
   </component>
