@@ -4,6 +4,8 @@ import com.david.learn.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class PersonService {
 
@@ -18,9 +20,13 @@ public class PersonService {
         Person person = new Person();
         person.setFirstname("Cristian");
         person.setLastname("Sanchez");
+        if (this.validatePerson(person)) {
+            locationService.createLocationByPerson(person);
+            System.out.println("Person Created " + person);
+        } else {
+            System.out.println("The person was not created");
+        }
 
-        locationService.createLocationByPerson(person);
-        System.out.println("Person Created " + person);
     }
 
     public int updateLocationByPerson() {
@@ -35,13 +41,25 @@ public class PersonService {
         return 0;
     }
 
-    public String createPerson(Person person){
-        try{
+    public String createPerson(Person person) {
+        try {
             Thread.sleep(11000);
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
+
+        if (this.validatePerson(person)) {
+            locationService.createLocationByPerson(person);
+            System.out.println("Person Created " + person);
+        } else {
+            System.out.println("The person was not created");
+        }
+
         return locationService.createPerson(person);
+    }
+
+    private boolean validatePerson(Person person) {
+        return person != null && person.getId() != null;
     }
 
 }
