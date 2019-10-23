@@ -17,8 +17,9 @@ import java.util.Comparator;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Matchers.*;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.argThat;
+import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -69,7 +70,6 @@ public class AjaxControllerTest {
         }
     }
 
-
     @Test
     public void sorting_asc_on_iso() {
         when(request.getParameter(anyString())).thenReturn("1", "10",
@@ -107,7 +107,8 @@ public class AjaxControllerTest {
         when(request.getParameter(anyString())).thenReturn("1", "10",
                 SortOrder.DESC.name(), SortColumn.iso.name());
 
-        when(countryDao.retrieve(isA(RetrieveCountryRequest.class))).thenThrow(new RuntimeException("Database failure"));
+        when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
+                .thenThrow(new RuntimeException("Database failure"));
 
         JsonDataWrapper<Country> response = ajaxController.retrieve(request);
     }
@@ -206,10 +207,11 @@ public class AjaxControllerTest {
 
     }
 
-    class SortByISOInAscendingOrderMatcher extends
+    class SortByISOInAscendingOrderMatcher implements
             ArgumentMatcher<RetrieveCountryRequest> {
         @Override
-        public boolean matches(Object request) {
+        public boolean matches(RetrieveCountryRequest argument) {
+
             if (request instanceof RetrieveCountryRequest) {
                 SortOrder sortOrder = ((RetrieveCountryRequest) request)
                         .getSortOrder();
@@ -222,10 +224,10 @@ public class AjaxControllerTest {
         }
     }
 
-    class SortByISOInDescOrderMatcher extends
+    class SortByISOInDescOrderMatcher implements
             ArgumentMatcher<RetrieveCountryRequest> {
         @Override
-        public boolean matches(Object request) {
+        public boolean matches(RetrieveCountryRequest argument) {
             if (request instanceof RetrieveCountryRequest) {
                 SortOrder sortOrder = ((RetrieveCountryRequest) request)
                         .getSortOrder();

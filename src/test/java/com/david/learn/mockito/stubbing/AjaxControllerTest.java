@@ -1,21 +1,5 @@
 package com.david.learn.mockito.stubbing;
 
-import static junit.framework.Assert.assertEquals;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Matchers.argThat;
-import static org.mockito.Matchers.isA;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
-import static org.mockito.Mockito.verifyZeroInteractions;
-import static org.mockito.Mockito.when;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,221 +9,235 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import static junit.framework.Assert.assertEquals;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.argThat;
+import static org.mockito.Matchers.isA;
+import static org.mockito.Mockito.*;
+
 @RunWith(MockitoJUnitRunner.class)
 public class AjaxControllerTest {
 
-	@Mock
-	HttpServletRequest request;
-	@Mock
-	CountryDao countryDao;
+    @Mock
+    HttpServletRequest request;
+    @Mock
+    CountryDao countryDao;
 
-	AjaxController ajaxController;
-	List<Country> countries;
+    AjaxController ajaxController;
+    List<Country> countries;
 
-	@Before
-	public void setUp() {
-		ajaxController = new AjaxController(countryDao);
-		countries = new ArrayList<Country>();
-		countries.add(create("Argentina", "AR", "32"));
-		countries.add(create("USA", "US", "01"));
-		countries.add(create("Brazil", "BR", "05"));
-		countries.add(create("India", "IN", "91"));
-	}
+    @Before
+    public void setUp() {
+        ajaxController = new AjaxController(countryDao);
+        countries = new ArrayList<Country>();
+        countries.add(create("Argentina", "AR", "32"));
+        countries.add(create("USA", "US", "01"));
+        countries.add(create("Brazil", "BR", "05"));
+        countries.add(create("India", "IN", "91"));
+    }
 
-	class SortAnswer implements Answer<Object> {
-		@Override
-		public Object answer(InvocationOnMock invocation) throws Throwable {
-			RetrieveCountryRequest request = (RetrieveCountryRequest) invocation
-					.getArguments()[0];
-			final int order = request.getSortOrder().equals(SortOrder.ASC) ? 1
-					: -1;
-			final SortColumn col = request.getSortname();
-			Collections.sort(countries, new Comparator<Country>() {
+    class SortAnswer implements Answer<Object> {
+        @Override
+        public Object answer(InvocationOnMock invocation) throws Throwable {
+            RetrieveCountryRequest request = (RetrieveCountryRequest) invocation
+                    .getArguments()[0];
+            final int order = request.getSortOrder().equals(SortOrder.ASC) ? 1
+                    : -1;
+            final SortColumn col = request.getSortname();
+            Collections.sort(countries, new Comparator<Country>() {
 
-				public int compare(Country arg0, Country arg1) {
-					if (SortColumn.countryCode.equals(col))
-						return order
-								* arg0.getCountryCode().compareTo(
-										arg1.getCountryCode());
+                public int compare(Country arg0, Country arg1) {
+                    if (SortColumn.countryCode.equals(col))
+                        return order
+                                * arg0.getCountryCode().compareTo(
+                                arg1.getCountryCode());
 
-					if (SortColumn.iso.equals(col))
-						return order * arg0.getIso().compareTo(arg1.getIso());
+                    if (SortColumn.iso.equals(col))
+                        return order * arg0.getIso().compareTo(arg1.getIso());
 
-					return order * arg0.getName().compareTo(arg1.getName());
-				}
-			});
+                    return order * arg0.getName().compareTo(arg1.getName());
+                }
+            });
 
-			return countries;
-		}
-	}
+            return countries;
+        }
+    }
 
-	
-	@Test
-	public void sorting_asc_on_iso() {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.ASC.name(), SortColumn.iso.name());
+    @Test
+    public void sorting_asc_on_iso() {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.ASC.name(), SortColumn.iso.name());
 
-		when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
-				.thenAnswer(new SortAnswer());
+        when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
+                .thenAnswer(new SortAnswer());
 
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-		assertEquals("AR", response.getRows().get(0).getIso());
-		assertEquals("BR", response.getRows().get(1).getIso());
-		assertEquals("IN", response.getRows().get(2).getIso());
-		assertEquals("US", response.getRows().get(3).getIso());
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+        assertEquals("AR", response.getRows().get(0).getIso());
+        assertEquals("BR", response.getRows().get(1).getIso());
+        assertEquals("IN", response.getRows().get(2).getIso());
+        assertEquals("US", response.getRows().get(3).getIso());
 
-	}
-	
-	@Test
-	public void sorting_desc_on_iso() {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.DESC.name(), SortColumn.iso.name());
+    }
 
-		when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
-				.thenAnswer(new SortAnswer());
+    @Test
+    public void sorting_desc_on_iso() {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.DESC.name(), SortColumn.iso.name());
 
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-		assertEquals("AR", response.getRows().get(3).getIso());
-		assertEquals("BR", response.getRows().get(2).getIso());
-		assertEquals("IN", response.getRows().get(1).getIso());
-		assertEquals("US", response.getRows().get(0).getIso());
+        when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
+                .thenAnswer(new SortAnswer());
 
-	}
-	
-	@Test(expected=RuntimeException.class)
-	public void exception() {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.DESC.name(), SortColumn.iso.name());
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+        assertEquals("AR", response.getRows().get(3).getIso());
+        assertEquals("BR", response.getRows().get(2).getIso());
+        assertEquals("IN", response.getRows().get(1).getIso());
+        assertEquals("US", response.getRows().get(0).getIso());
 
-		when(countryDao.retrieve(isA(RetrieveCountryRequest.class))).thenThrow(new RuntimeException("Database failure"));
-		
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-	}
-	
-	@Test
-	public void retrieves_empty_country_list() throws Exception {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.ASC.name(), SortColumn.iso.name());
+    }
 
-		List<Country> countryList = new ArrayList<Country>();
-		countryList.add(new Country());
+    @Test(expected = RuntimeException.class)
+    public void exception() {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.DESC.name(), SortColumn.iso.name());
 
-		when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
-				.thenReturn(countryList);
+        when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
+                .thenThrow(new RuntimeException("Database failure"));
 
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-		assertEquals(1, response.getPage());
-		assertEquals(1, response.getTotal());
-		assertEquals(1, response.getRows().size());
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+    }
 
-	}
+    @Test
+    public void retrieves_empty_country_list() throws Exception {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.ASC.name(), SortColumn.iso.name());
 
-	private Country create(String name, String iso, String coutryCode) {
-		Country country = new Country();
-		country.setCountryCode(coutryCode);
-		country.setIso(iso);
-		country.setName(name);
-		return country;
-	}
+        List<Country> countryList = new ArrayList<Country>();
+        countryList.add(new Country());
 
-	@Test
-	public void countryList_sortedBy_ISO_In_asc_order() throws Exception {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.ASC.name(), SortColumn.iso.name());
+        when(countryDao.retrieve(isA(RetrieveCountryRequest.class)))
+                .thenReturn(countryList);
 
-		Country argentina = new Country();
-		argentina.setIso("AR");
-		Country india = new Country();
-		india.setIso("IN");
-		Country usa = new Country();
-		usa.setIso("US");
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+        assertEquals(1, response.getPage());
+        assertEquals(1, response.getTotal());
+        assertEquals(1, response.getRows().size());
 
-		List<Country> ascCountryList = new ArrayList<Country>();
-		ascCountryList.add(argentina);
-		ascCountryList.add(india);
-		ascCountryList.add(usa);
+    }
 
-		when(
-				countryDao
-						.retrieve(argThat(new SortByISOInAscendingOrderMatcher())))
-				.thenReturn(ascCountryList);
+    private Country create(String name, String iso, String coutryCode) {
+        Country country = new Country();
+        country.setCountryCode(coutryCode);
+        country.setIso(iso);
+        country.setName(name);
+        return country;
+    }
 
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-		assertEquals(ascCountryList, response.getRows());
+    @Test
+    public void countryList_sortedBy_ISO_In_asc_order() throws Exception {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.ASC.name(), SortColumn.iso.name());
 
-		// verify(request, only()).getParameter(anyString());
-	}
+        Country argentina = new Country();
+        argentina.setIso("AR");
+        Country india = new Country();
+        india.setIso("IN");
+        Country usa = new Country();
+        usa.setIso("US");
 
-	@Test
-	public void verify_zero_interaction() {
-		verifyZeroInteractions(request, countryDao);
-	}
+        List<Country> ascCountryList = new ArrayList<Country>();
+        ascCountryList.add(argentina);
+        ascCountryList.add(india);
+        ascCountryList.add(usa);
 
-	@Test
-	public void verify_nomore_interaction() {
-		request.getParameter("page");
-		request.getContextPath();
+        when(
+                countryDao
+                        .retrieve(argThat(new SortByISOInAscendingOrderMatcher())))
+                .thenReturn(ascCountryList);
 
-		verify(request).getParameter(anyString());
-		// this will fail getContextPath() is not verified
-		verifyNoMoreInteractions(request);
-	}
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+        assertEquals(ascCountryList, response.getRows());
 
-	@Test
-	public void countryList_sortedBy_ISO_In_desc_order() throws Exception {
-		when(request.getParameter(anyString())).thenReturn("1", "10",
-				SortOrder.DESC.name(), SortColumn.iso.name());
+        // verify(request, only()).getParameter(anyString());
+    }
 
-		Country argentina = new Country();
-		argentina.setIso("AR");
-		Country india = new Country();
-		india.setIso("IN");
-		Country usa = new Country();
-		usa.setIso("US");
+    @Test
+    public void verify_zero_interaction() {
+        verifyZeroInteractions(request, countryDao);
+    }
 
-		List<Country> descCountryList = new ArrayList<Country>();
-		descCountryList.add(usa);
-		descCountryList.add(india);
-		descCountryList.add(argentina);
+    @Test
+    public void verify_nomore_interaction() {
+        request.getParameter("page");
+        request.getContextPath();
 
-		when(countryDao.retrieve(argThat(new SortByISOInDescOrderMatcher())))
-				.thenReturn(descCountryList);
+        verify(request).getParameter(anyString());
+        // this will fail getContextPath() is not verified
+        verifyNoMoreInteractions(request);
+    }
 
-		JsonDataWrapper<Country> response = ajaxController.retrieve(request);
-		assertEquals(descCountryList, response.getRows());
+    @Test
+    public void countryList_sortedBy_ISO_In_desc_order() throws Exception {
+        when(request.getParameter(anyString())).thenReturn("1", "10",
+                SortOrder.DESC.name(), SortColumn.iso.name());
 
-	}
+        Country argentina = new Country();
+        argentina.setIso("AR");
+        Country india = new Country();
+        india.setIso("IN");
+        Country usa = new Country();
+        usa.setIso("US");
 
-	class SortByISOInAscendingOrderMatcher extends
-			ArgumentMatcher<RetrieveCountryRequest> {
-		@Override
-		public boolean matches(Object request) {
-			if (request instanceof RetrieveCountryRequest) {
-				SortOrder sortOrder = ((RetrieveCountryRequest) request)
-						.getSortOrder();
-				SortColumn col = ((RetrieveCountryRequest) request)
-						.getSortname();
-				return SortOrder.ASC.equals(sortOrder)
-						&& SortColumn.iso.equals(col);
-			}
-			return false;
-		}
-	}
+        List<Country> descCountryList = new ArrayList<Country>();
+        descCountryList.add(usa);
+        descCountryList.add(india);
+        descCountryList.add(argentina);
 
-	class SortByISOInDescOrderMatcher extends
-			ArgumentMatcher<RetrieveCountryRequest> {
-		@Override
-		public boolean matches(Object request) {
-			if (request instanceof RetrieveCountryRequest) {
-				SortOrder sortOrder = ((RetrieveCountryRequest) request)
-						.getSortOrder();
-				SortColumn col = ((RetrieveCountryRequest) request)
-						.getSortname();
-				return SortOrder.DESC.equals(sortOrder)
-						&& SortColumn.iso.equals(col);
-			}
-			return false;
-		}
-	}
+        when(countryDao.retrieve(argThat(new SortByISOInDescOrderMatcher())))
+                .thenReturn(descCountryList);
+
+        JsonDataWrapper<Country> response = ajaxController.retrieve(request);
+        assertEquals(descCountryList, response.getRows());
+
+    }
+
+    class SortByISOInAscendingOrderMatcher implements
+            ArgumentMatcher<RetrieveCountryRequest> {
+
+        @Override
+        public boolean matches(RetrieveCountryRequest argument) {
+            if (request instanceof RetrieveCountryRequest) {
+                SortOrder sortOrder = ((RetrieveCountryRequest) request)
+                        .getSortOrder();
+                SortColumn col = ((RetrieveCountryRequest) request)
+                        .getSortname();
+                return SortOrder.ASC.equals(sortOrder)
+                        && SortColumn.iso.equals(col);
+            }
+            return false;
+        }
+    }
+
+    class SortByISOInDescOrderMatcher implements
+            ArgumentMatcher<RetrieveCountryRequest> {
+
+        @Override
+        public boolean matches(RetrieveCountryRequest argument) {
+            if (request instanceof RetrieveCountryRequest) {
+                SortOrder sortOrder = ((RetrieveCountryRequest) request)
+                        .getSortOrder();
+                SortColumn col = ((RetrieveCountryRequest) request)
+                        .getSortname();
+                return SortOrder.DESC.equals(sortOrder)
+                        && SortColumn.iso.equals(col);
+            }
+            return false;
+        }
+    }
 
 }
