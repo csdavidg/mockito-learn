@@ -2,7 +2,7 @@ package com.david.learn.poc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -25,7 +25,7 @@ public class PocTest {
     }
 
     @Test
-    public void usingVerifyExecution(){
+    public void usingVerifyExecution() {
 
     }
 

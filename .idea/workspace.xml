@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="Spy and captor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/powermockito/StaticInitializationBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/StaticInitializationBlockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+    <list default="true" id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/argumentcaptor/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/powermockito/LoggerMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/argumentcaptor/ServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/powermockito/LoggerMessagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/services/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/services/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/david/learn/powermockito/StaticInitializationBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/david/learn/powermockito/StaticInitializationBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/MeanTaxFactorCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/StaticInitializationBlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/powermockito/StaticInitializationBlockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/annotations/AnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/annotations/AnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/annotations/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/mockito/stubbing/AjaxControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/mockito/stubbing/AjaxControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/poc/PocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/poc/PocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/services/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/services/PersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/david/learn/stubbing/AjaxControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/david/learn/stubbing/AjaxControllerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +118,6 @@
   </component>
   <component name="ProjectId" id="1Q4Umx24YVv3OgERp6FuxBAn8fe" />
   <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -125,18 +129,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MockitoEssentials/Chapter 5/UnitTestingLegacyCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.david.learn.voidmethods" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.david.learn" />
     </key>
@@ -145,7 +146,6 @@
       <recent name="com.david.learn.tax.interfaces" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\cristian.sanchez\IdeaProjects\mockito-learn\src\main\java\com\david\learn\voidmethods" />
       <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\test\java\com\david\learn" />
       <recent name="C:\Users\csdav\IdeaProjects\mockito-learn\src\main\java\com\david\learn\mockito\stubbing" />
     </key>
@@ -162,37 +162,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StaticInitializationBlockTest.logTest">
-    <configuration name="mockito-learn [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PersonServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoggerMessagesTest.logTest">
+    <configuration name="LoggerMessagesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mockito-poc.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.david.learn.services.*" />
+          <option name="PATTERN" value="com.david.learn.powermockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn.services" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.services.PersonServiceTest" />
+      <option name="PACKAGE_NAME" value="com.david.learn.powermockito" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.powermockito.LoggerMessagesTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoggerMessagesTest.logTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-poc.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.david.learn.powermockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.david.learn.powermockito" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.powermockito.LoggerMessagesTest" />
+      <option name="METHOD_NAME" value="logTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,12 +198,12 @@
       <module name="mockito-poc.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.david.learn.*" />
+          <option name="PATTERN" value="com.david.learn.powermockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.StaticInitializationBlockTest" />
+      <option name="PACKAGE_NAME" value="com.david.learn.powermockito" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.powermockito.StaticInitializationBlockTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,12 +213,12 @@
       <module name="mockito-poc.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.david.learn.*" />
+          <option name="PATTERN" value="com.david.learn.powermockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.StaticInitializationBlockTest" />
+      <option name="PACKAGE_NAME" value="com.david.learn.powermockito" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.powermockito.StaticInitializationBlockTest" />
       <option name="METHOD_NAME" value="logTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -232,12 +229,12 @@
       <module name="mockito-poc.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.david.learn.*" />
+          <option name="PATTERN" value="com.david.learn.powermockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.david.learn" />
-      <option name="MAIN_CLASS_NAME" value="com.david.learn.StaticInitializationBlockTest" />
+      <option name="PACKAGE_NAME" value="com.david.learn.powermockito" />
+      <option name="MAIN_CLASS_NAME" value="com.david.learn.powermockito.StaticInitializationBlockTest" />
       <option name="METHOD_NAME" value="supressesStaticInitializationBlocks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -246,10 +243,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StaticInitializationBlockTest.logTest" />
-        <item itemvalue="JUnit.PersonServiceTest" />
+        <item itemvalue="JUnit.LoggerMessagesTest.logTest" />
+        <item itemvalue="JUnit.LoggerMessagesTest" />
         <item itemvalue="JUnit.StaticInitializationBlockTest" />
-        <item itemvalue="Gradle.mockito-learn [build]" />
+        <item itemvalue="JUnit.StaticInitializationBlockTest.logTest" />
         <item itemvalue="JUnit.StaticInitializationBlockTest.supressesStaticInitializationBlocks" />
       </list>
     </recent_temporary>
@@ -279,7 +276,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0997d9df-9661-41da-91de-5ad1ce69d545" name="Default Changelist" comment="" />
+      <changelist id="2c0ad64a-0d64-4592-a5a8-923342c72b42" name="Default Changelist" comment="" />
       <created>1567029524638</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -306,10 +303,12 @@
       <workItem from="1570401509299" duration="2589000" />
       <workItem from="1570404678838" duration="3688000" />
       <workItem from="1570410975625" duration="4032000" />
-      <workItem from="1570565344131" duration="4037000" />
-      <workItem from="1571156306736" duration="5846000" />
-      <workItem from="1571256437269" duration="46000" />
-      <workItem from="1571690753854" duration="2712000" />
+      <workItem from="1570415031658" duration="147000" />
+      <workItem from="1570493894848" duration="3256000" />
+      <workItem from="1570577676488" duration="1717000" />
+      <workItem from="1571754227369" duration="4630000" />
+      <workItem from="1572317901657" duration="25000" />
+      <workItem from="1573085393399" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="Stub objects">
       <created>1568858226329</created>
@@ -318,21 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568858226329</updated>
     </task>
-    <task id="LOCAL-00002" summary="Void Methods">
-      <created>1570550196258</created>
+    <task id="LOCAL-00002" summary="Mockito, Proxy creation and POC, OurMockitoFramework">
+      <created>1570415102404</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1570550196258</updated>
+      <updated>1570415102404</updated>
     </task>
-    <task id="LOCAL-00003" summary="Spy and captor">
-      <created>1570571677483</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1570571677483</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,19 +345,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Stub objects" />
-    <MESSAGE value="Void Methods" />
-    <MESSAGE value="Spy and captor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spy and captor" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/david/learn/poc/OurMockito.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Mockito, Proxy creation and POC, OurMockitoFramework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mockito, Proxy creation and POC, OurMockitoFramework" />
   </component>
 </project>
