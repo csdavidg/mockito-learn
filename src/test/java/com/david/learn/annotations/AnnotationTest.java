@@ -1,12 +1,11 @@
 package com.david.learn.annotations;
 
-import com.david.learn.argumentcaptor.Service;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,7 +23,7 @@ public class AnnotationTest {
     private Service service;
 
     @Test
-    public void whenCaptorAnnotationIsUsed() {
+    public void whenCAptorAnnotationIsUsed() {
         service.call(Arrays.asList("a", "b"));
         verify(service).call(captor.capture());
         assertTrue(captor.getValue().containsAll(Arrays.asList("a", "b")));
