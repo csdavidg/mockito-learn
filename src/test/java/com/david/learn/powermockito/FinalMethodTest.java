@@ -26,4 +26,17 @@ public class FinalMethodTest {
         when(mockFinal.getPublicFinalValue()).thenReturn("value");
         assertEquals("value", mockFinal.getPublicFinalValue());
     }
+
+    @Test
+    public void pruebas(){
+        char[] prueba = {'h','e','l','l','o'};
+        int n = 0;
+        boolean condi = true;
+        while(prueba[n] != '\0' && condi){
+            n++;
+            if(n == 10){
+                condi = false;
+            }
+        }
+    }
 }
